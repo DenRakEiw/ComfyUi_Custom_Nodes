@@ -28,11 +28,6 @@ class PrintHelloWorld:
         
         return {}
 
-    # Method to print the text
-    @classmethod
-    def print_text(cls, text):
-        print(f"Tutorial Text: {text}")
-
 class ConcatenateHelloWorld:
     # Definition of input parameters
     @classmethod
@@ -49,8 +44,7 @@ class ConcatenateHelloWorld:
     CATEGORY = "Tutorial Nodes"
 
     # Method to concatenate text
-    @classmethod
-    def concatenate_text(cls, text1, text2):
+    def concatenate_text(self, text1, text2):
         text_out = text1 + " " + text2
         return (text_out,)
 
